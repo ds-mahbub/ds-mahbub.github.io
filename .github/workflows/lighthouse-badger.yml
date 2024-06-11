@@ -14,10 +14,10 @@ name: "Lighthouse Badger"
 
 # INPUTS as environmental variables (env) for not manually triggered workflows
 env:
-  URLS: https://alshedivat.github.io/al-folio/
-  TOKEN_NAME: LIGHTHOUSE_BADGER_TOKEN
+  URLS: https://ds-mahbub.github.io/al-folio/
+  TOKEN_NAME: website
   # If any of the following env is blank, a default value is used instead
-  REPO_BRANCH: "${{ github.repository }} master" # target repository & branch e.g. 'dummy/mytargetrepo main'
+  REPO_BRANCH: "${{ ds-mahbub.github.io }} master" # target repository & branch e.g. 'dummy/mytargetrepo main'
   MOBILE_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --throttling.cpuSlowdownMultiplier=2"
   DESKTOP_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --preset=desktop --throttling.cpuSlowdownMultiplier=1"
 
@@ -50,7 +50,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: ${{ env.REPOSITORY }}
-          token: ${{ secrets[github.event.inputs.token_name] || secrets[env.TOKEN_NAME] }}
+          token: ${{ secrets[github.event.inputs.token_name] || secrets[env.website] }}
           ref: ${{ env.BRANCH }}
       - uses: actions/checkout@v4
         with:
