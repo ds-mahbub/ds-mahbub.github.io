@@ -167,6 +167,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _portfolio
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -328,3 +329,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+
+# Portfolio Collection
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
