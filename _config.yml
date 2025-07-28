@@ -20,7 +20,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "DS Mahbub"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Data Scientist | Machine Learning & Analytics"
 name                     : "DS Mahbub"
 description              : "Data Science Portfolio & Blog"
 url                      : "https://ds-mahbub.github.io"
@@ -29,9 +29,9 @@ repository               : "ds-mahbub/ds-mahbub.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
-enable_copy_code_button  : # true, false (default)
+enable_copy_code_button  : true
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
@@ -69,7 +69,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -100,9 +100,10 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Mahbubur Rahman"
+  links:
+    - "https://github.com/ds-mahbub"
 
 # Analytics
 analytics:
@@ -114,10 +115,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mahabubar Rahman"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Mahbubur Rahman"
+  avatar           : "/assets/images/me.jpg"
   bio              : "Data Scientist | Machine Learning & Data Analytics"
-  location         : ""
+  location         : "Dhaka, Bangladesh"
   email            :
   links:
     - label: "Email"
@@ -134,7 +135,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/ds-mahbub"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -150,7 +151,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/ds-mahbub"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -160,7 +161,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
+  since: "2025"
 
 
 # Reading Files
@@ -231,7 +232,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Dhaka
 
 
 # Pagination with jekyll-paginate
