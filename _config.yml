@@ -169,6 +169,7 @@ include:
   - .htaccess
   - _pages
   - _portfolio
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -331,9 +332,20 @@ defaults:
       share: true
       related: true
 
+  # _portfolio items
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      classes: wide
+      share: true
+      related: false
+
 
 # Portfolio Collection
 collections:
   portfolio:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /portfolio/:title/
